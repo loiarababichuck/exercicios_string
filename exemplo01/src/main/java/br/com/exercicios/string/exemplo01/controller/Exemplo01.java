@@ -20,4 +20,9 @@ public class Exemplo01 {
         return "A soma dos valores informados é " + exemplo01service.soma(a,b);
 
     }
+
+    @GetMapping("soma-query")
+    public String somaQuery(@RequestParam int a, @RequestParam int b){
+        return "A soma dos valores informados é "+ exemplo01service.soma(a, b);
+    }
 }
